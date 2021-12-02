@@ -29,11 +29,14 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_checkBox_stateChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
     QList<Form*> formList;
     int size = 0;
     int row = 3;
     int col = 3;
+    bool followThisResize = 0;
 };
 #endif // MAINWINDOW_H

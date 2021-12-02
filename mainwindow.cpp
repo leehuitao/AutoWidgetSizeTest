@@ -19,6 +19,9 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 {
     for(auto it : formList){
         it->setParentWH(this->width(),this->height());
+        if(followThisResize){
+            sortWidget4();
+        }
     }
 }
 
@@ -33,7 +36,7 @@ void MainWindow::on_pushButton_clicked()
         f->show();
         formList.append(f);
     }
-
+    sortWidget4();
 }
 
 void MainWindow::on_pushButton_2_clicked()
@@ -93,4 +96,9 @@ void MainWindow::on_pushButton_4_clicked()
 {
     row = ui->row_lineEdit->text().toInt();
     col = ui->col_lineEdit->text().toInt();
+}
+
+void MainWindow::on_checkBox_stateChanged(int arg1)
+{
+    followThisResize = arg1;
 }
