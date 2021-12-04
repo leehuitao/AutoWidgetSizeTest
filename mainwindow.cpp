@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include "redraw_label.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -28,6 +29,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 void MainWindow::on_pushButton_clicked()
 {
+//    RedrawLabel *lab = new RedrawLabel(this);
+//    lab->show();
     size = ui->lineEdit->text().toInt();
     for(int i = 0  ; i <size ;i++){
         Form* f = new Form(this);
@@ -46,6 +49,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::sortWidget4()
 {
+
     int w = this->width()/col;
     int h = this->height()/row;
     int currentSortIndex = 0;

@@ -1,5 +1,6 @@
 #include "form.h"
 #include "ui_form.h"
+#include "redraw_label.h"
 #include <QDebug>
 #define min(a,b) ((a)<(b)? (a) :(b))
 #define max(a,b) ((a)>(b)? (a) :(b))
@@ -13,7 +14,7 @@ Form::Form(QWidget *parent) :
     setWindowFlags(Qt::FramelessWindowHint);  //设置无边框
     setMouseTracking(true); //开启鼠标追踪
     setMinimumSize(100,100);
-
+    ui->label->setPixmap(QPixmap("D:/person.jpeg"));
 
 }
 
@@ -24,7 +25,7 @@ Form::~Form()
 
 void Form::setLabel(QString str)
 {
-    ui->label->setText(str);
+    //ui->label->setText(str);
 }
 
 void Form::mousePressEvent(QMouseEvent * event)
@@ -163,4 +164,9 @@ void Form::mouseReleaseEvent(QMouseEvent *event)
     setCursor(tempCursor);
     testEdge();
     editWidgetStatus = 0;
+}
+
+void Form::wheelEvent(QWheelEvent *event)
+{
+
 }

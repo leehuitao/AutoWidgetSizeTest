@@ -19,14 +19,17 @@ SOURCES += \
     form.cpp \
     main.cpp \
     mainwindow.cpp \
+    redraw_label.cpp
 
 HEADERS += \
     form.h \
     mainwindow.h \
+    redraw_label.h
 
 FORMS += \
     form.ui \
     mainwindow.ui \
+    redraw_label.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
