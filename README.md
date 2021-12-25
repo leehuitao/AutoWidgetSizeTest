@@ -23,4 +23,6 @@
 
 1.  牛顶顶
 
-    ![鼠标画框功能](image/shotlabel.png) 软件架构
+    ![鼠标画框功能](image/shotlabel.png) 
+    ![输入图片说明](image/autosize1.png)
+    ![输入图片说明](image/autosize2.png)
