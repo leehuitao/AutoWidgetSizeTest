@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1117</width>
+    <height>878</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,6 +15,22 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0">
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>位置信息：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="img_path"/>
+    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
@@ -22,13 +38,32 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="img_path"/>
+    <item row="4" column="0" colspan="4">
+     <widget class="QTextEdit" name="pos_text">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QPushButton" name="select_img_btn">
+    <item row="1" column="0" colspan="4">
+     <widget class="ShotLabel" name="img_lab">
+      <property name="minimumSize">
+       <size>
+        <width>480</width>
+        <height>320</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <property name="text">
-       <string>选择</string>
+       <string>图片</string>
       </property>
      </widget>
     </item>
@@ -45,33 +80,29 @@
       </property>
      </spacer>
     </item>
-    <item row="1" column="0" colspan="4">
-     <widget class="ShotLabel" name="img_lab">
+    <item row="0" column="2">
+     <widget class="QPushButton" name="select_img_btn">
       <property name="text">
-       <string>图片</string>
+       <string>选择</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0" colspan="2">
-     <widget class="QLabel" name="label_3">
+     <widget class="ShotPolygonLabel" name="img_lab_2">
+      <property name="minimumSize">
+       <size>
+        <width>480</width>
+        <height>320</height>
+       </size>
+      </property>
       <property name="maximumSize">
        <size>
-        <width>16777215</width>
-        <height>30</height>
+        <width>480</width>
+        <height>320</height>
        </size>
       </property>
       <property name="text">
-       <string>位置信息：</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0" colspan="4">
-     <widget class="QTextEdit" name="pos_text">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>100</height>
-       </size>
+       <string>图片1</string>
       </property>
      </widget>
     </item>
@@ -82,7 +113,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1117</width>
      <height>23</height>
     </rect>
    </property>
@@ -94,6 +125,11 @@
    <class>ShotLabel</class>
    <extends>QLabel</extends>
    <header>shot_label.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ShotPolygonLabel</class>
+   <extends>QLabel</extends>
+   <header>shot_polygon_label.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

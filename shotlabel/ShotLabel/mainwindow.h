@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "shot_polygon_label.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -19,6 +19,8 @@ private slots:
     void on_select_img_btn_clicked();
 
     void onMouseRelease(QRect);
+
+    void slotDrawPolygon(QVector<QPointF>);
 private:
     Ui::MainWindow *ui;
 };

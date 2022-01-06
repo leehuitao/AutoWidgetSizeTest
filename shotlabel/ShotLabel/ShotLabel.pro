@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    shot_label.cpp
+    shot_label.cpp \
+    shot_polygon_label.cpp
 
 HEADERS += \
     mainwindow.h \
-    shot_label.h
+    shot_label.h \
+    shot_polygon_label.h
 
 FORMS += \
     mainwindow.ui

@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->img_lab,&ShotLabel::signMouseRelease,this,&MainWindow::onMouseRelease);
+    connect(ui->img_lab_2,&ShotPolygonLabel::signDrawPolygon,this,&MainWindow::slotDrawPolygon);
 }
 
 MainWindow::~MainWindow()
@@ -26,9 +27,17 @@ void MainWindow::on_select_img_btn_clicked()
         ui->img_path->setText(fileName);
     }
     ui->img_lab->setImage(fileName);
+    ui->img_lab_2->setImage(fileName);
 }
 
 void MainWindow::onMouseRelease(QRect rect)
 {
     ui->pos_text->append("X:"+QString::number(rect.x())+"Y:"+QString::number(rect.y())+"W:"+QString::number(rect.width())+"H:"+QString::number(rect.height()));
+}
+
+void MainWindow::slotDrawPolygon(QVector<QPointF> points)
+{
+    for(auto it : points){
+        ui->pos_text->append("X:"+QString::number(it.x())+"Y:"+QString::number(it.y()));
+    }
 }
