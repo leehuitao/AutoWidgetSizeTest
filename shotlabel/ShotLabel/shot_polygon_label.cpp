@@ -16,6 +16,7 @@ void ShotPolygonLabel::mousePressEvent(QMouseEvent *event)
         closed = 0;
         rlist.clear();
         finalPoints.clear();
+        currentPoint.clear();
     }
     update();
 }
