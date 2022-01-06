@@ -53,8 +53,12 @@ void ShotPolygonLabel::drawLine()
     QPainter painter(this);  //QPainter对象
     QPen pen; //画笔
     pen.setColor(QColor(255, 0, 0));  //设置画笔颜色
+    pen.setWidth(3);
     painter.setPen(pen);
     painter.setBrush(Qt::NoBrush); //添加画刷
+    painter.drawPoints(currentPoint);
+    pen.setWidth(1);
+    painter.setPen(pen);
     if(!closed){
         for (int i = 0;i < rlist.size()-1; i++) {
             QLineF line(rlist.at(i),rlist.at(i+1));
@@ -84,18 +88,23 @@ bool ShotPolygonLabel::checkPFPDistance(int x, int y)
         auto powx = pow(x-point.x(),2);
         auto powy = pow(y-point.y(),2);
         //两点间的距离小于3则闭合
-        if(sqrt(powx+powy)<3){
+        if(sqrt(powx+powy)<10){
             signDrawPolygon(rlist);
-            finalPoints = QPolygonF(rlist);
+            for(auto it : rlist){
+                realList.append(QPointF(it.x()/scalew,it.y()/scaleh));
+            }
+            finalPoints = QPolygonF(realList);
             return 1;
         } else{
             QPointF p(x,y);
             rlist.append(p);
+            currentPoint.append(p);
             return 0;
         }
     }else{
         QPointF p(x,y);
         rlist.append(p);
+        currentPoint.append(p);
         return 0;
     }
 }

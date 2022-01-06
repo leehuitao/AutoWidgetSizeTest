@@ -59,8 +59,10 @@ private:
     //点位是否闭合
     bool closed=false;
     QPointF pointf;
-    QVector<QPointF>  rlist;
-    QPolygonF       finalPoints;
+    QVector<QPointF>    currentPoint;
+    QVector<QPointF>    rlist;
+    QVector<QPointF>    realList;
+    QPolygonF           finalPoints;
     QImage img;
     int     sourcew;
     int     sourceh;
