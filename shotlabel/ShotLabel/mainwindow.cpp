@@ -28,6 +28,7 @@ void MainWindow::on_select_img_btn_clicked()
     }
     ui->img_lab->setImage(fileName);
     ui->img_lab_2->setImage(fileName);
+    ui->img_merge_lab->setImagePath(fileName);
 }
 
 void MainWindow::onMouseRelease(QRect rect)
@@ -40,4 +41,14 @@ void MainWindow::slotDrawPolygon(QVector<QPointF> points)
     for(auto it : points){
         ui->pos_text->append("X:"+QString::number(it.x())+"Y:"+QString::number(it.y()));
     }
+}
+
+void MainWindow::on_rect_btn_clicked()
+{
+    ui->img_merge_lab->setDrawType(DrawRect);
+}
+
+void MainWindow::on_polygon_btn_clicked()
+{
+    ui->img_merge_lab->setDrawType(DrawPolygon);
 }

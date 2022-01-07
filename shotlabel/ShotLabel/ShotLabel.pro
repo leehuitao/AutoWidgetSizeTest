@@ -19,11 +19,13 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     shot_label.cpp \
+    shot_merge_label.cpp \
     shot_polygon_label.cpp
 
 HEADERS += \
     mainwindow.h \
     shot_label.h \
+    shot_merge_label.h \
     shot_polygon_label.h
 
 FORMS += \

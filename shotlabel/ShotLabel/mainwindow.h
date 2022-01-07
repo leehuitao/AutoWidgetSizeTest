@@ -21,6 +21,10 @@ private slots:
     void onMouseRelease(QRect);
 
     void slotDrawPolygon(QVector<QPointF>);
+    void on_rect_btn_clicked();
+
+    void on_polygon_btn_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
