@@ -26,5 +26,11 @@
     <ClInclude Include="ReverseLink.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
