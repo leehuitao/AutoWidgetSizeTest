@@ -1,9 +1,6 @@
 #pragma once
-
-#include <vector>
-#include <iostream>
-using namespace std;
-//快速排序（从小到大）
+#include "define.h"
+//快速排序（从小到大） 0 ,5 ,{ 4,2,5,7,9,1 };
 void quickSort(int left, int right, vector<int>& arr)
 {
 	if (left >= right)

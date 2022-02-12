@@ -6,9 +6,7 @@
 这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。
 */
 
-#include <vector>
-#include <iostream>
-using namespace std;
+#include "define.h"
 vector<int> popVector{ 4,2,5,7,9,1 };
 
 void BubbleSort() {

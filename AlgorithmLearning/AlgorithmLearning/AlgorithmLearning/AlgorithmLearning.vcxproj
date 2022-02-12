@@ -144,6 +144,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="CircularLink.h" />
+    <ClInclude Include="define.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="ReverseLink.h" />
   </ItemGroup>

@@ -7,17 +7,7 @@
 	4.cur指向缓存下一位的地址
 	5.当cur为nullptr时退出循环
 **/
-#include <iostream>
-
-using namespace std;
-
-struct LinkNode
-{
-	int data = 0;
-	LinkNode* next = nullptr;
-};
-
-
+#include "define.h"
 class ReverseLink
 {
 public:
