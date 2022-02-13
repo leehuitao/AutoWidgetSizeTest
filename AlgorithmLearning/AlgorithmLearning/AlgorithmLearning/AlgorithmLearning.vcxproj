@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlgorithmLearning.cpp" />
+    <ClCompile Include="RBTree.cpp" />
     <ClCompile Include="ReverseLink.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +148,7 @@
     <ClInclude Include="CircularLink.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="RBTree.h" />
     <ClInclude Include="ReverseLink.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

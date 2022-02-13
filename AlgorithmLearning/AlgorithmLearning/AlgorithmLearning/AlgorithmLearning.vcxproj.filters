@@ -21,6 +21,9 @@
     <ClCompile Include="ReverseLink.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="RBTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ReverseLink.h">
@@ -36,6 +39,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
