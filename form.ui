@@ -73,7 +73,7 @@
   <customwidget>
    <class>RedrawLabel</class>
    <extends>QLabel</extends>
-   <header location="global">redraw_label.h</header>
+   <header>redraw_label.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

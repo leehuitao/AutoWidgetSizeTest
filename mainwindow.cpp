@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
 #include "redraw_label.h"
@@ -105,4 +105,14 @@ void MainWindow::on_pushButton_4_clicked()
 void MainWindow::on_checkBox_stateChanged(int arg1)
 {
     followThisResize = arg1;
+}
+
+void MainWindow::on_btn_1_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_btn_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }

@@ -1,4 +1,4 @@
-#ifndef MAINWINDOW_H
+﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
@@ -30,6 +30,10 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_checkBox_stateChanged(int arg1);
+
+    void on_btn_1_clicked();
+
+    void on_btn_2_clicked();
 
 private:
     Ui::MainWindow *ui;

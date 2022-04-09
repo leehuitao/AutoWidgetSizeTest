@@ -19,12 +19,14 @@ SOURCES += \
     form.cpp \
     main.cpp \
     mainwindow.cpp \
-    redraw_label.cpp
+    redraw_label.cpp \
+    shot_label.cpp
 
 HEADERS += \
     form.h \
     mainwindow.h \
-    redraw_label.h
+    redraw_label.h \
+    shot_label.h
 
 FORMS += \
     form.ui \
